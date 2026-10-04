@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="TechSphere Technical Interview Quiz">
+
+    <title>TechSphere | Technical Interview Quiz</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Animated 3D Background -->
+    <div class="space">
+
+        <div class="grid-floor"></div>
+
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+        <div class="glow glow-three"></div>
+
+        <div class="planet planet-one"></div>
+        <div class="planet planet-two"></div>
+
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="cube cube-one"></div>
+        <div class="cube cube-two"></div>
+        <div class="cube cube-three"></div>
+
+        <div id="particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="brand">
+            <div class="brand-icon">
+                TS
+            </div>
+
+            <div>
+                <h1>TechSphere</h1>
+                <p>Technical Interview Lab</p>
+            </div>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            ONLINE
+        </div>
+
+    </header>
+
+    <!-- Main -->
+    <main class="main-container">
+
+        <section class="quiz-card" id="quizCard">
+
+            <div class="card-glow"></div>
+
+            <!-- Top information -->
+            <div class="quiz-top">
+
+                <div>
+                    <span class="label">TECHNICAL ASSESSMENT</span>
+
+                    <h2>Developer Challenge</h2>
+
+                    <p class="description">
+                        Test your knowledge across programming,
+                        web development, databases and software engineering.
+                    </p>
+                </div>
+
+                <div class="score-box">
+                    <span>SCORE</span>
+                    <strong id="score">0</strong>
+                </div>
+
+            </div>
+
+            <!-- Progress -->
+            <div class="progress-area">
+
+                <div class="progress-info">
+                    <span id="questionNumber">
+                        Question 1 / 100
+                    </span>
+
+                    <span id="percentage">
+                        1%
+                    </span>
+                </div>
+
+                <div class="progress-track">
+                    <div id="progressBar"></div>
+                </div>
+
+            </div>
+
+            <!-- Question -->
+            <div class="question-area">
+
+                <div class="category" id="category">
+                    PYTHON
+                </div>
+
+                <h3 id="question">
+                    Loading question...
+                </h3>
+
+            </div>
+
+            <!-- Answers -->
+            <div
+                class="answers"
+                id="answerButtons">
+            </div>
+
+            <!-- Bottom -->
+            <div class="quiz-bottom">
+
+                <span class="keyboard-tip">
+                    Press 1-4 to select an answer
+                </span>
+
+                <button
+                    class="next-button"
+                    id="nextButton"
+                    disabled>
+                    Next Question
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Result -->
+        <section
+            class="result-card hidden"
+            id="resultCard">
+
+            <div class="result-icon">
+                ★
+            </div>
+
+            <span class="label">
+                ASSESSMENT COMPLETE
+            </span>
+
+            <h2>Your Technical Score</h2>
+
+            <div class="final-score">
+                <span id="finalScore">0</span>
+                <small>/ 100</small>
+            </div>
+
+            <p id="resultMessage">
+                Keep learning and improving.
+            </p>
+
+            <div class="result-grid">
+
+                <div class="result-box">
+                    <span>CORRECT</span>
+                    <strong id="correctAnswers">0</strong>
+                </div>
+
+                <div class="result-box">
+                    <span>WRONG</span>
+                    <strong id="wrongAnswers">0</strong>
+                </div>
+
+                <div class="result-box">
+                    <span>ACCURACY</span>
+                    <strong id="percentageResult">0%</strong>
+                </div>
+
+            </div>
+
+            <button
+                class="restart-button"
+                id="restartButton">
+                Restart Assessment
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <span>TechSphere</span>
+        <span>100 Technical Questions</span>
+        <span>Built with HTML • CSS • JavaScript</span>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
